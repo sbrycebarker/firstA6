@@ -1,4 +1,4 @@
-<div style="text-align:center">
-  <h3>this is the server component</h3>
-
+<div style="text-align:center; border: 1px solid black;">
+  <h3>this is a server component</h3>
+    <P [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{ online: serverStatus === 'online' }">{{'Server'}} with id {{serverId}} is {{ getServerStatus() }}</P>
 </div>
